@@ -9,9 +9,9 @@ Pieces to be able to restore a MySQL database
 The **mysql_restore.sh** script, iterates across the backup folder that you can specify, read all the files and create the database, then restore the lastest bz2 file per database that find in that folder. 
 
 ### Parameters
-BACKUP_DIR="THE FOLDER WHERE THE ACTUAL BACKUPS ARE STORED"
-MYSQL_USER="BACKUP USER"
-MYSQL_PASSWORD="PASSWORD OF THE ABOVE USER"
+* BACKUP_DIR="THE FOLDER WHERE THE ACTUAL BACKUPS ARE STORED"
+* MYSQL_USER="BACKUP USER"
+* MYSQL_PASSWORD="PASSWORD OF THE ABOVE USER"
 
 
 
@@ -21,10 +21,10 @@ The **users_privileges_backup.sh** script, allows you to get a .sql file with al
 You can easy run the .sql file to restore all the users privileges.
 
 ### Parameters
-TIMESTAMP=$(date +"%F") **The timestamp for the .sql file created**
-BACKUP_DIR="THE FOLDER WHERE THE ACTUAL BACKUPS ARE STORED"
-MYSQL_USER="BACKUP USER"
-MYSQL_PASSWORD="PASSWORD OF THE ABOVE USER"
+* TIMESTAMP=$(date +"%F") **The timestamp for the .sql file created**
+* BACKUP_DIR="THE FOLDER WHERE THE ACTUAL BACKUPS ARE STORED"
+* MYSQL_USER="BACKUP USER"
+* MYSQL_PASSWORD="PASSWORD OF THE ABOVE USER"
 
 An example of the output:
 
